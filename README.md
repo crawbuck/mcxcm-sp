@@ -1,3 +1,6 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bbedd4eb-20a2-4ddb-97d3-67214f39bd03/deploy-status)](https://app.netlify.com/projects/mcxcm-sp/deploys)
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
