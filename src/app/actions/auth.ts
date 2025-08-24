@@ -5,7 +5,7 @@ import { redirect } from 'next/navigation';
 import { eq } from 'drizzle-orm';
 import { db, users } from '@/lib/db';
 import { hashPassword, comparePassword, createToken } from '@/lib/auth';
-import { signUpSchema, signInSchema, type SignUpData, type SignInData } from '@/lib/validation';
+import { signUpSchema, signInSchema } from '@/lib/validation';
 
 export async function signUpAction(formData: FormData) {
   const rawData = {
