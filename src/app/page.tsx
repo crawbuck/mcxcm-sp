@@ -1,21 +1,14 @@
-import Link from 'next/link';
+import { redirect } from 'next/navigation';
 import { getCurrentUser } from '@/lib/auth';
 
 export default async function Home() {
   const user = await getCurrentUser();
-  console.log({ user });
 
-  return (
-    <>
-    {user ? (
-      <h1>
-        I'm a user!
-      </h1>
-    ) : (
-      <Link href="/signup">
-        Sign Up
-      </Link>
-    )}
-    </>
-  );
+  if (user) {
+    redirect('/dashboard');
+  } else {
+    redirect('/signup');
+  }
+
+  return null;
 }

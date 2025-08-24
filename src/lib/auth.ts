@@ -11,6 +11,15 @@ export interface User {
   email: string;
 }
 
+interface JWTPayload {
+  userId: string;
+  email: string;
+  firstName: string;
+  lastName: string;
+  iat?: number;
+  exp?: number;
+}
+
 export async function hashPassword(password: string): Promise<string> {
   return bcrypt.hash(password, 12);
 }
@@ -34,7 +43,7 @@ export function createToken(user: User): string {
 
 export function verifyToken(token: string): User | null {
   try {
-    const decoded = jwt.verify(token, JWT_SECRET) as any;
+    const decoded = jwt.verify(token, JWT_SECRET) as JWTPayload;
     return {
       id: decoded.userId,
       firstName: decoded.firstName,
