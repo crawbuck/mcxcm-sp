@@ -82,7 +82,7 @@ export default function SignInPage() {
                 name="email"
                 type="email"
                 required
-                className="border-bootstrap border-2 rounded bg-white text-bootstrap p-2 w-full"
+                className="border-bootstrap border-2 rounded bg-white text-bootstrap p-2 w-full outline-none"
                 onChange={handleInputChange}
                 placeholder="Email" />
 
@@ -93,7 +93,7 @@ export default function SignInPage() {
                 type="password"
                 required
                 onChange={handleInputChange}
-                className="border-bootstrap border-2 rounded bg-white text-bootstrap p-2 w-full"
+                className="border-bootstrap border-2 rounded bg-white text-bootstrap p-2 w-full outline-none"
                 placeholder="Password" />
 
 

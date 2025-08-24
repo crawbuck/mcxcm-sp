@@ -87,33 +87,33 @@ export default function SignUpPage() {
               name="firstName"
               type="text"
               required
-              className='border-bootstrap border-2 rounded bg-white text-bootstrap p-2'
+              className='border-bootstrap border-2 rounded bg-white text-bootstrap p-2 outline-none'
               onChange={() => handleInputChange('firstName')}
               placeholder="First Name" />
-              <input
-                id="lastName"
-                name="lastName"
-                type="text"
-                required
-                className='border-bootstrap border-2 rounded bg-white text-bootstrap p-2'
-                onChange={() => handleInputChange('lastName')}
-                placeholder="Last Name" />
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                className='border-bootstrap border-2 rounded bg-white text-bootstrap p-2 col-span-full'
-                onChange={() => handleInputChange('email')}
-                placeholder="Email" />
-              <input
-                id="password"
-                name="password"
-                type="password"
-                required
-                className='border-bootstrap border-2 rounded bg-white text-bootstrap p-2 col-span-full'
-                onChange={() => handleInputChange('password')}
-                placeholder="Password" />
+            <input
+              id="lastName"
+              name="lastName"
+              type="text"
+              required
+              className='border-bootstrap border-2 rounded bg-white text-bootstrap p-2 outline-none'
+              onChange={() => handleInputChange('lastName')}
+              placeholder="Last Name" />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              required
+              className='border-bootstrap border-2 rounded bg-white text-bootstrap p-2 col-span-full outline-none'
+              onChange={() => handleInputChange('email')}
+              placeholder="Email" />
+            <input
+              id="password"
+              name="password"
+              type="password"
+              required
+              className='border-bootstrap border-2 rounded bg-white text-bootstrap p-2 col-span-full outline-none'
+              onChange={() => handleInputChange('password')}
+              placeholder="Password" />
             <button type="submit"disabled={isSubmitting} className='col-span-full rounded text-white bg-bootstrap p-2 cursor-pointer transition-colors hover:bg-fudge duration-300'>
               {isSubmitting ? 'Creating account...' : 'Sign Up'}
             </button>
