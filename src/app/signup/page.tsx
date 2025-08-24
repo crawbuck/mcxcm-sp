@@ -81,7 +81,7 @@ export default function SignUpPage() {
               </div>
             </div>
           )}
-          <div className="grid gap-4 grid-cols-2">
+          <div className="grid gap-4 grid-cols-2 max-w-md mx-auto w-full">
             <input
               id="firstName"
               name="firstName"
