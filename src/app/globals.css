@@ -1,11 +1,15 @@
 @import "tailwindcss";
 
 :root {
+  --fudge: #572516;
+  --bootstrap: #7d3520;
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@theme inline {
+@theme {
+  --color-fudge: var(--fudge);
+  --color-bootstrap: var(--bootstrap);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
